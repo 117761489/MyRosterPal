@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText">
+
+    //Each of these items will correlate with one of the options on the menu bar
+
+    //Home Button
+    <item
+    android:id="@+id/action_home"
+    android:enabled="true"
+    android:icon="@drawable/ic_home"
+    android:title="Home"
+    app:showAsAction="ifRoom" />
+
+    //Staff Button
+    <item
+    android:id="@+id/action_staff"
+    android:enabled="true"
+    android:icon="@drawable/ic_staff"
+    android:title="Staff"
+    app:showAsAction="ifRoom" />
+
+    //Roster Button
+    <item
+        android:id="@+id/action_roster"
+        android:enabled="true"
+        android:icon="@drawable/ic_roster"
+        android:title="Rosters"
+        app:showAsAction="ifRoom" />
+
+    //Request Button
+    <item
+        android:id="@+id/action_request"
+        android:enabled="true"
+        android:icon="@drawable/ic_requests"
+        android:title="Requests"
+        app:showAsAction="ifRoom" />
+
+    //Settings Button
+    <item
+    android:id="@+id/action_settings"
+    android:enabled="true"
+    android:icon="@drawable/ic_settings"
+    android:title="Settings"
+    app:showAsAction="ifRoom" />
+
+
+</menu>
