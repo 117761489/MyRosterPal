@@ -7,7 +7,6 @@
     tools:context=".StaffActivity"
     tools:ignore="ExtraText">
 
-    //Code for creating bottom navigation
 
     <Button
         android:id="@+id/btnDelete"
@@ -36,6 +35,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.568" />
 
+    //Code for Navigation
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="0dp"

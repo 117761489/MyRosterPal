@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 switch (item.getItemId()) {
+                    //Each case runs depending on which option is pressed on the nav bar
                     case R.id.action_home:
+                        //Intents switch to the next activity, this one will just reload the Main Activity
                         startActivity(new Intent(MainActivity.this, MainActivity.class));
                         break;
                     case R.id.action_staff:
