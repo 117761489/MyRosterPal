@@ -23,5 +23,9 @@
     <string name="home">HOME</string>
     <string name="welcome_message">Welcome to the MyRosterPal App</string>
     <string name="staff_member">Staff Member:</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="age">Age</string>
+    <string name="save">Save</string>
 
 </resources>

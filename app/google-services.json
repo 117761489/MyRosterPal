@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1014862515066",
+    "firebase_url": "https://myrosterpal-default-rtdb.firebaseio.com",
+    "project_id": "myrosterpal",
+    "storage_bucket": "myrosterpal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014862515066:android:f5fe9711f8c22cf98024c3",
+        "android_client_info": {
+          "package_name": "com.example.myrosterpal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014862515066-m9siec0v0aej1if3v6p7m9nbhvh8ct0l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJRx61MvH56dGTzB9Yq-1bAu1-mhcKXIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014862515066-m9siec0v0aej1if3v6p7m9nbhvh8ct0l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
