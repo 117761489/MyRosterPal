@@ -53,6 +53,7 @@ public class Staff {
         this.key = key;
     }
 
+    //Maps model to firebase
     @Override
     public boolean equals(Object object){
         if(object == null)

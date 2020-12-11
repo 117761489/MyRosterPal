@@ -10,6 +10,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import org.parceler.Parcels;
 
+//Code adapted from IS4447 lecture by Michael Gleeson - 03/12/20
 
 public class EditStaffActivity extends Activity {
     private EditText editTextFirstName;
@@ -36,6 +37,7 @@ public class EditStaffActivity extends Activity {
         initUIFromStaff();
     }
 
+    //UI if i want to add a new person
     private void initUI(){
         editTextFirstName = findViewById(R.id.editTextFirstName);
         editTextLastName = findViewById(R.id.editTextLastName);
@@ -43,12 +45,14 @@ public class EditStaffActivity extends Activity {
         btnSave = findViewById(R.id.btnSave);
     }
 
+    //Ui if i want to edit a user
     private void initUIFromStaff(){
         editTextFirstName.setText(staff.getFirstName());
         editTextLastName.setText(staff.getLastName());
         editTextAge.setText(staff.getAge() + "");
     }
 
+    //Passes value onto the database using the setValue method
     private void setButtonSaveOnClickListener(){
         btnSave.setOnClickListener(e -> {
             String firstName = editTextFirstName.getText().toString();
@@ -59,6 +63,7 @@ public class EditStaffActivity extends Activity {
             staff.setLastName(lastName);
             staff.setAge(age);
 
+            //Using keys that google are automatically setting (.getKey)
             if(edit){
                 databaseReference.child(staff.getKey()).setValue(staff);
             }else{

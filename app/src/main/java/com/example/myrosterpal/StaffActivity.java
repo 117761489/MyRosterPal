@@ -83,18 +83,20 @@ public class StaffActivity extends AppCompatActivity {
         setListViewItemListener();
         setListViewLongClickListener();
     }
-
+    //Initiates Ui
     private void initUI() {
         progressBar = findViewById(R.id.progressBar);
         fab = findViewById(R.id.fab);
         listView = findViewById(R.id.listView);
     }
 
+    //Populates ListView with ListView Adapter
     private void setListViewAdapter(){
         listViewAdapter = new ListViewAdapter(this, listStaff);
         listView.setAdapter(listViewAdapter);
     }
 
+    //Sets the key and adds staffs data to the list
     private void addChildEventListener() {
         databaseReference.addChildEventListener(new ChildEventListener() {
             @Override
@@ -107,6 +109,7 @@ public class StaffActivity extends AppCompatActivity {
                 }
             }
 
+            //updates the changed data in the ListView
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
                 Staff staff = dataSnapshot.getValue(Staff.class);
@@ -129,6 +132,7 @@ public class StaffActivity extends AppCompatActivity {
                 listViewAdapter.notifyDataSetChanged();
             }
 
+
             @Override
             public void onChildMoved(DataSnapshot dataSnapshot, String s) {
 
@@ -138,7 +142,7 @@ public class StaffActivity extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {}
         });
     }
-
+    //
     private void addSingleEventListener(){
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -151,6 +155,7 @@ public class StaffActivity extends AppCompatActivity {
         });
     }
 
+    //Code to bring you to edit staff activity
     private void setListViewItemListener(){
         listView.setOnItemClickListener((adapterView, view, i, l) -> {
             Bundle bundle = new Bundle();
@@ -162,6 +167,7 @@ public class StaffActivity extends AppCompatActivity {
         });
     }
 
+    //Code for deleting data from the listview and database
     private void setListViewLongClickListener(){
         listView.setOnItemLongClickListener((adapterView, view, i, l) -> {
             Staff staff = listStaff.get(i);
@@ -180,6 +186,7 @@ public class StaffActivity extends AppCompatActivity {
         });
     }
 
+    //Code to bring you to Activity to add a new staff member
     private void setFabClickListener() {
         fab.setOnClickListener(e -> {
             startActivity(new Intent(this, EditStaffActivity.class));

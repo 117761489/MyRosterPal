@@ -35,6 +35,7 @@ public class ListViewAdapter extends BaseAdapter {
         return 0;
     }
 
+    //Code to set views for the ListView
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
