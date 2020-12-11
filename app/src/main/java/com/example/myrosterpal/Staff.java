@@ -2,6 +2,8 @@ package com.example.myrosterpal;
 
 import org.parceler.Parcel;
 
+//Code adapted from IS4447 lecture by Michael Gleeson - 03/12/20
+
 @Parcel
 public class Staff {
     private String key;

@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+//Code adapted from IS4447 lecture by Michael Gleeson - 03/12/20
+
 public class ListViewAdapter extends BaseAdapter {
     private Activity activity;
     private List<Staff> listStaff;

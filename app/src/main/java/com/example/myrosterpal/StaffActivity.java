@@ -69,6 +69,8 @@ public class StaffActivity extends AppCompatActivity {
             }
         });
 
+
+        //Code adapted from IS4447 lecture by Michael Gleeson - 03/12/20
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
         initUI();
