@@ -27,5 +27,7 @@
     <string name="last_name">Last Name</string>
     <string name="age">Age</string>
     <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="monday">Monday</string>
 
 </resources>

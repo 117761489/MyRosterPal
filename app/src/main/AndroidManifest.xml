@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRosterPal">
         <activity android:name=".StaffActivity"></activity>
+        <activity android:name=".EditStaffActivity"></activity>
         <activity android:name=".SettingsActivity" />
         <activity android:name=".RequestActivity" />
         <activity android:name=".RosterActivity" />

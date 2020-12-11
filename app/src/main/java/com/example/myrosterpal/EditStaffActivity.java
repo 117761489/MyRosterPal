@@ -15,7 +15,7 @@ public class EditStaffActivity extends Activity {
     private EditText editTextFirstName;
     private EditText editTextLastName;
     private EditText editTextAge;
-    private Button button;
+    private Button btnSave;
 
     private DatabaseReference databaseReference;
 
@@ -31,7 +31,7 @@ public class EditStaffActivity extends Activity {
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
         initUI();
-        setButtonOnClickListener();
+        setButtonSaveOnClickListener();
         handleBundle();
         initUIFromStaff();
     }
@@ -40,7 +40,7 @@ public class EditStaffActivity extends Activity {
         editTextFirstName = findViewById(R.id.editTextFirstName);
         editTextLastName = findViewById(R.id.editTextLastName);
         editTextAge = findViewById(R.id.editTextAge);
-        button = findViewById(R.id.button);
+        btnSave = findViewById(R.id.btnSave);
     }
 
     private void initUIFromStaff(){
@@ -49,8 +49,8 @@ public class EditStaffActivity extends Activity {
         editTextAge.setText(staff.getAge() + "");
     }
 
-    private void setButtonOnClickListener(){
-        button.setOnClickListener(e -> {
+    private void setButtonSaveOnClickListener(){
+        btnSave.setOnClickListener(e -> {
             String firstName = editTextFirstName.getText().toString();
             String lastName = editTextLastName.getText().toString();
             int age = Integer.parseInt(editTextAge.getText().toString());

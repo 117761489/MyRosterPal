@@ -7,14 +7,18 @@
 
     <TextView
         android:id="@+id/textViewFirstName"
+        android:textColor="@color/white"
         style="@style/textViewStyle"/>
 
     <TextView
         android:id="@+id/textViewLastName"
+        android:textColor="@color/white"
         style="@style/textViewStyle"/>
 
     <TextView
         android:id="@+id/textViewAge"
+        android:textColor="@color/white"
         style="@style/textViewStyle"/>
+
 
 </LinearLayout>
